@@ -1,0 +1,642 @@
+{
+  "basics": {
+    "name": "Oleg Gorbatiuk",
+    "headline": "Product Developer | React, React Native",
+    "email": "gorbatiuk.ol@gmail.com",
+    "location": "Lodz, Poland",
+    "phone": {
+      "label": "+48 578 201 846",
+      "href": "tel:+48578201846"
+    },
+    "linkedin": {
+      "label": "gorbatiuk",
+      "href": "https://www.linkedin.com/in/gorbatiuk/"
+    },
+    "github": {
+      "label": "gorbatiukcom",
+      "href": "https://github.com/gorbatiukcom"
+    },
+    "url": {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/gorbatiuk/"
+    },
+    "customFields": [],
+    "picture": {
+      "url": "https://storage.rxresu.me/clp9g17adele89hunrdgndfjs/pictures/clpct8xr87ito14h5kutbocfa.jpg",
+      "size": 64,
+      "aspectRatio": 1,
+      "borderRadius": 0,
+      "effects": {
+        "hidden": false,
+        "border": false,
+        "grayscale": false
+      }
+    }
+  },
+  "sections": {
+    "summary": {
+      "name": "Summary",
+      "columns": 1,
+      "visible": true,
+      "id": "summary",
+      "content": "<p><strong>Main Stack</strong></p><p><strong>Front-end:</strong> TypeScript + React.js + Next.js  </p><p><strong>Mobile:</strong> TypeScript + React Native + Expo    </p><p><strong>Back-end:</strong> TypeScript + Node.js + MongoDB \\ AWS serverless    </p><p><strong>Design:</strong> Figma    </p><p>Product analytics: Mixpanel</p>"
+    },
+    "awards": {
+      "name": "Awards",
+      "columns": 1,
+      "visible": true,
+      "id": "awards",
+      "items": []
+    },
+    "certifications": {
+      "name": "Certifications",
+      "columns": 1,
+      "visible": true,
+      "id": "certifications",
+      "items": []
+    },
+    "education": {
+      "name": "Education",
+      "columns": 1,
+      "visible": true,
+      "id": "education",
+      "items": [
+        {
+          "id": "r1aswbpg8nw91jnyqaccqsw5",
+          "visible": true,
+          "institution": "University of Computer Science and Skills",
+          "location": "Lodz, Poland",
+          "logo": "https://gorbatiuk.com/images/cv/logo_wsinf.jpg",
+          "studyType": "Bachelor's degree",
+          "area": "Computer Science",
+          "score": "",
+          "date": "2017 — 2021",
+          "summary": "The diploma is unfinished.",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "drulylxr2f6i7m157t1ifj5a",
+          "visible": true,
+          "institution": "Izmail Polytechnic Lyceum",
+          "location": "Izmail, Ukraine",
+          "logo": "https://gorbatiuk.com/images/cv/logo_ipl.png",
+          "studyType": "",
+          "area": "Information Technology",
+          "score": "",
+          "date": "2010 — 2017",
+          "summary": "Activities and societies: Olympiad programminging",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "experience": {
+      "name": "Experience",
+      "columns": 1,
+      "visible": true,
+      "id": "experience",
+      "items": [
+        {
+          "id": "ddk9wn1m29aw14gwnm247p5z",
+          "visible": true,
+          "company": "Callisto Enterprise (web3)",
+          "logo": "https://gorbatiuk.com/images/cv/logo_clo.png",
+          "position": "React Native Developer",
+          "location": "Remote",
+          "date": "Sep 2022 - Aug 2023 · 1 yr",
+          "summary": "Developed a mobile application from scratch.\n\nThe project is a non-custodial mobile crypto wallet supporting over 80 blockchains.",
+          "achievements": [],
+          "tags": ["React Native", "Expo", "React", "Web3"],
+          "url": {
+            "label": "",
+            "href": "https://www.linkedin.com/company/71952805"
+          }
+        },
+        {
+          "id": "yltej1q62ivxuea8b8o4ulw0",
+          "visible": true,
+          "company": "Localie (travel-tech)",
+          "logo": "https://gorbatiuk.com/images/cv/logo_localie.png",
+          "position": "Lead Full Stack Developer",
+          "location": "Remote",
+          "date": "May 2019 - Jul 2022 · 3ys 3mos",
+          "summary": "",
+          "achievements": [
+            "Launched a mobile app, dealing with all aspects: design, frontend, backend, analytics, custom CRM system, and publication to the App Store.",
+            "Worked closely with the CEO and other stakeholders during product decision-making.",
+            "I completely rewrote web application from old technologies to TypeScript, React.js, Next.js, and styled-components.",
+            "Created an internal Design System and helped implement it in Figma for our designers to use.",
+            "Helped with backend development using Node.js + mongoDB + TypeScript + GraphQL",
+            "Maintained an internal CRM system written in Vue.js + Nuxt.js + Feathers.js + Bootstrap (And started rewriting it to React, Next.js, and TypeScript, using an internal design system written earlier for the main product)",
+            "Participated in Google's Growth Lab program",
+            "Participated in Madeira Startup Retreat Accelerator"
+            
+          ],
+          "tags": ["TS", "React", "Next.js", "React Native", "Vue.js", "Node.js"],
+          "url": {
+            "label": "",
+            "href": "https://www.linkedin.com/company/19038534"
+          }
+        },
+        {
+          "id": "yltej1q62ivxuea8b8o4ulw1",
+          "visible": true,
+          "company": "Localie (travel-tech)",
+          "logo": "https://gorbatiuk.com/images/cv/logo_localie.png",
+          "position": "Front-end Developer",
+          "location": "Remote",
+          "date": "Aug 2018 - May 2019 · 10 mos",
+          "summary": "",
+          "achievements": [],
+          "tags": ["JS", "React", "Node.js"],
+          "url": {
+            "label": "",
+            "href": "https://www.linkedin.com/company/19038534"
+          }
+        },
+        {
+          "id": "a7w93xj25artndl3r8zf2j29",
+          "visible": true,
+          "company": "Hexagon Geospatial",
+          "logo": "https://gorbatiuk.com/images/cv/logo_hexagon.png",
+          "position": "Intern DevOps Engineer",
+          "location": "Lodz, Poland",
+          "date": "Aug 2018 - May 2019 · 10 mos",
+          "summary": "Created CI/CD pipelines for a project consisting of over 70 repositories using Jenkins",
+          "achievements": [],
+          "tags": ["Jenkins", "CI/CD"],
+          "url": {
+            "label": "",
+            "href": "https://www.linkedin.com/company/5071314"
+          }
+        }
+      ]
+    },
+    "volunteer": {
+      "name": "Volunteering",
+      "columns": 1,
+      "visible": true,
+      "id": "volunteer",
+      "items": []
+    },
+    "interests": {
+      "name": "Interests",
+      "columns": 1,
+      "visible": true,
+      "id": "interests",
+      "items": []
+    },
+    "languages": {
+      "name": "Languages",
+      "columns": 1,
+      "visible": true,
+      "id": "languages",
+      "items": [
+        {
+          "id": "u7z2l3rknleli4866dq8fsu6",
+          "visible": true,
+          "name": "English",
+          "description": "Professional Working",
+          "level": 0
+        },
+        {
+          "id": "nz7bcqgwwsqzu2n8yqzerpkx",
+          "visible": true,
+          "name": "Polish",
+          "description": "Professional Working",
+          "level": 0
+        },
+        {
+          "id": "vjmbkob9198hw64y6awk3c5o",
+          "visible": true,
+          "name": "Ukrainian",
+          "description": "Native Speaker",
+          "level": 0
+        },
+        {
+          "id": "ilz5wlqq9dd8wvmi8ztorin2",
+          "visible": true,
+          "name": "Russian",
+          "description": "Native Speaker",
+          "level": 0
+        }
+      ]
+    },
+    "profiles": {
+      "name": "Profiles",
+      "columns": 1,
+      "visible": false,
+      "id": "profiles",
+      "items": [
+        {
+          "id": "pszt6ql2tc23ekewjnna6pil",
+          "visible": true,
+          "network": "LinkedIn",
+          "username": "gorbatiuk",
+          "icon": "linkedin",
+          "url": {
+            "label": "",
+            "href": "https://www.linkedin.com/in/gorbatiuk/"
+          }
+        }
+      ]
+    },
+    "projects": {
+      "name": "Pet-projects",
+      "columns": 1,
+      "visible": true,
+      "id": "projects",
+      "items": [
+        {
+          "id": "st93tyad9esyz9hfc3c0pabz",
+          "visible": true,
+          "name": "🍕 SaaS Online Food Ordering System",
+          "description": "Personal pet project.",
+          "date": "Aug 2022 - Present",
+          "summary": "For the tech stack, I chose React\\Next.js for the front-end and AWS Amplify for the back-end.\n\nThe service allows the user to create a restaurant website with the following list of features:\n* Restaurant landing page\n* Order food for delivery\n* Order food for pick-up \n* Online order payment\n* Table reservation\n* In-house QR Menu\n\nAn example of a client's restaurant website:",
+          "keywords": [
+            "React.js",
+            "Next.js",
+            "AWS Amplify"
+          ],
+          "url": {
+            "label": "",
+            "href": "https://terrace.in.ua/"
+          }
+        }
+      ]
+    },
+    "publications": {
+      "name": "Publications",
+      "columns": 1,
+      "visible": true,
+      "id": "publications",
+      "items": []
+    },
+    "references": {
+      "name": "References",
+      "columns": 1,
+      "visible": true,
+      "id": "references",
+      "items": []
+    },
+    "skills": {
+      "name": "Skills",
+      "columns": 1,
+      "visible": true,
+      "id": "skills",
+      "items": [
+        {
+          "id": "si6j9kt1tw0wr70m9sxgxx88",
+          "visible": true,
+          "name": "JavaScript",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "mm81o8g5dk48zrz0syeo44en",
+          "visible": true,
+          "name": "TypeScript",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "b0new98i8vj2zi8h4xn9fzfo",
+          "visible": true,
+          "name": "React.js",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "j19edgvfqj3nmhsj5pc2jv47",
+          "visible": true,
+          "name": "Next.js",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "n3giw39n97smd3jkvxljyeea",
+          "visible": true,
+          "name": "React Native",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "lzr4ac3y4cv7qnz97x9v8rzw",
+          "visible": true,
+          "name": "Expo",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "q72k2ulaa6u74mjup3l6tcls",
+          "visible": true,
+          "name": "Node.js",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "ybe4udtqtegx7ujayn5h2yc3",
+          "visible": true,
+          "name": "MongoDB",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "am942scpvn04jb1jv1aostu3",
+          "visible": true,
+          "name": "Vue.js",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "u8wlvgq615zqa5uw10gbsklk",
+          "visible": true,
+          "name": "Nuxt.js",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "vgxqjyhdzcxwl4jr3k3bxsqo",
+          "visible": true,
+          "name": "Web3",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "m6gqnykwxnoq28369rkchv7t",
+          "visible": true,
+          "name": "GraphQL",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "rkrmgfc0flgkw39sc2kxec5t",
+          "visible": true,
+          "name": "AWS Amplify",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "v89k3wfajn5oc6kpzmo79kh4",
+          "visible": true,
+          "name": "HTML",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "t399x03340lbvdiw85gcupvb",
+          "visible": true,
+          "name": "HTML Emails",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "gtn95e0zh6jecywvskiqqx5w",
+          "visible": true,
+          "name": "CSS",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Styled Components",
+            "Emotion",
+            "Chakra UI",
+            "Tailwind",
+            "SASS",
+            "Bootstrap"
+          ]
+        },
+        {
+          "id": "hs571jzmdiddt6wk2kqfp5z3",
+          "visible": true,
+          "name": "State Managers",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "MobX",
+            "Effector",
+            "Recoil",
+            "Redux",
+            "React Context"
+          ]
+        },
+        {
+          "id": "eotjwmw050zln0lbadta25dp",
+          "visible": true,
+          "name": "CI/CD",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "GitHub Actions",
+            "Jenkins"
+          ]
+        },
+        {
+          "id": "kmw3t1hth0mqvt6jojqo5y4k",
+          "visible": true,
+          "name": "Git",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        }
+      ]
+    },
+    "skillsFront": {
+      "name": "Skills",
+      "columns": 1,
+      "visible": true,
+      "id": "skills",
+      "items": [
+        {
+          "id": "mm81o8g5dk48zrz0syeo44en",
+          "visible": true,
+          "name": "TypeScript",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "b0new98i8vj2zi8h4xn9fzfo",
+          "visible": true,
+          "name": "React.js",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "j19edgvfqj3nmhsj5pc2jv47",
+          "visible": true,
+          "name": "Next.js",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "mm81o8g5dk48zrz0syeo4444",
+          "visible": true,
+          "name": "styled components",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        }
+      ]
+    },
+    "skillsMobile": {
+      "name": "Skills",
+      "columns": 1,
+      "visible": true,
+      "id": "skills",
+      "items": [
+        {
+          "id": "mm81o8g5dk48zrz0syeo44en",
+          "visible": true,
+          "name": "TypeScript",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "n3giw39n97smd3jkvxljyeea",
+          "visible": true,
+          "name": "React Native",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "lzr4ac3y4cv7qnz97x9v8rzw",
+          "visible": true,
+          "name": "Expo",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "mm81o8g5dk48zrz0syeo4444",
+          "visible": true,
+          "name": "styled components",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        }
+      ]
+    },
+    "skillsBack": {
+      "name": "Skills",
+      "columns": 1,
+      "visible": true,
+      "id": "skills",
+      "items": [
+        {
+          "id": "mm81o8g5dk48zrz0syeo44en",
+          "visible": true,
+          "name": "TypeScript",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "q72k2ulaa6u74mjup3l6tcls",
+          "visible": true,
+          "name": "Node.js",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "ybe4udtqtegx7ujayn5h2yc3",
+          "visible": true,
+          "name": "MongoDB",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "rkrmgfc0flgkw39sc2kxec5t",
+          "visible": true,
+          "name": "AWS Amplify",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        }
+
+      ]
+    },
+    "custom": {}
+  },
+  "metadata": {
+    "template": "chikorita",
+    "layout": [
+      [
+        [
+          "profiles",
+          "summary",
+          "experience",
+          "education",
+          "projects",
+          "volunteer",
+          "references"
+        ],
+        [
+          "skills",
+          "interests",
+          "certifications",
+          "awards",
+          "publications",
+          "languages"
+        ]
+      ]
+    ],
+    "css": {
+      "value": ".section {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",
+      "visible": false
+    },
+    "page": {
+      "margin": 18,
+      "format": "a4",
+      "options": {
+        "breakLine": true,
+        "pageNumbers": true
+      }
+    },
+    "theme": {
+      "background": "#ffffff",
+      "text": "#000000",
+      "primary": "#000000"
+    },
+    "typography": {
+      "font": {
+        "family": "Lato",
+        "subset": "latin",
+        "variants": [
+          "regular"
+        ],
+        "size": 14
+      },
+      "lineHeight": 1.5,
+      "hideIcons": true,
+      "underlineLinks": true
+    },
+    "notes": ""
+  }
+}
