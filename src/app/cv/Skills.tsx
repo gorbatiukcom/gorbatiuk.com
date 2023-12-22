@@ -4,7 +4,6 @@ import { StyleSheet, Text, View } from "@react-pdf/renderer";
 import React from "react";
 
 import Card from "./Card";
-import List, { Item } from "./List";
 import Resume from "./reactive_resume.json";
 import Title from "./Title";
 
