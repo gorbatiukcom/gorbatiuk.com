@@ -128,10 +128,6 @@ const ProjectItem = ({
     summary2?: string;
     achievements: string[];
     tags: string[];
-    url: {
-      label: string;
-      href: string;
-    };
     urlWebApp?: {
       label: string;
       href: string;
