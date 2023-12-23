@@ -113,19 +113,19 @@ const Achievement = ({ achievement }: { achievement: string }) => {
     </View>
   );
 };
-const ExperienceItem = ({
+const ProjectItem = ({
   item,
   index,
 }: {
   item: {
     id: string;
     visible: boolean;
-    company: string;
+    name: string;
     logo: string;
-    position: string;
-    location: string;
+    description: string;
     date: string;
     summary: string;
+    summary2?: string;
     achievements: string[];
     tags: string[];
     url: {
@@ -147,7 +147,7 @@ const ExperienceItem = ({
     <Image src={item.logo} style={styles.logo} />
 
     <View style={{ width: "100%" }}>
-      <Text style={styles.position}>{item.position}</Text>
+      <Text style={styles.position}>{item.name}</Text>
       <View
         style={{
           flexDirection: "row",
@@ -156,16 +156,15 @@ const ExperienceItem = ({
           paddingTop: 1,
         }}
       >
-        <Text style={styles.company}>{item.company}</Text>
         <Text style={styles.company}>{item.date}</Text>
       </View>
-      <Text style={styles.company}>{item.location}</Text>
       <Text style={styles.summary}>{item.summary}</Text>
       <View style={{ width: "100%", gap: 4, paddingTop: 4 }}>
         {item.achievements.map((achievement) => (
           <Achievement key={achievement} achievement={achievement} />
         ))}
       </View>
+      <Text style={styles.summary}>{item.summary2}</Text>
       {item.urlWebApp || item.urlMobileApp ? (
         <View style={styles.links}>
           {item.urlWebApp ? (
@@ -194,12 +193,12 @@ const ExperienceItem = ({
   </View>
 );
 
-export const Experience = () => (
+export const Projects = () => (
   <Card>
-    <Title>{Resume.sections.experience.name}</Title>
+    <Title>{Resume.sections.projects.name}</Title>
     <View style={styles.items}>
-      {Resume.sections.experience.items.map((item, index) => {
-        return <ExperienceItem key={item.id} item={item} index={index} />;
+      {Resume.sections.projects.items.map((item, index) => {
+        return <ProjectItem key={item.id} item={item} index={index} />;
       })}
     </View>
   </Card>

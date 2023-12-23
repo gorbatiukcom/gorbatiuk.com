@@ -16,6 +16,7 @@ import React from "react";
 import { Education } from "./Education";
 import { Experience } from "./Experience";
 import { Info } from "./Info";
+import { Projects } from "./Projects";
 import Skills from "./Skills";
 import { Summary } from "./Summary";
 
@@ -76,8 +77,8 @@ const Resume = ({ style, ...rest }: any) => (
       </View>
       <View style={styles.rightColumn}>
         <Summary />
-
         <Experience />
+        <Projects />
         <Education />
       </View>
     </View>
@@ -99,7 +100,7 @@ const PDFDoc = () => (
 export default function Home() {
   return (
     <>
-      <PDFViewer showToolbar={false} style={{ width: "100vw", height: "100vh", border: "none" }}>
+      <PDFViewer showToolbar={false} style={{ width: "100vw", height: "100dvh", border: "none" }}>
         <PDFDoc />
       </PDFViewer>
       <Flex position="fixed" zIndex={100} right="20px" bottom="20px">

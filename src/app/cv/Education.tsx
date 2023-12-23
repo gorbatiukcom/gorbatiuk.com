@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     paddingTop: 4,
     fontSize: 10,
     fontFamily: "Instrument Sans 500",
-    color: "#848c94",
+    color: "#434649",
   },
   logo: {
     minWidth: 36,
@@ -67,7 +67,14 @@ const EducationItem = ({
 
     <View style={{ width: "100%" }}>
       <Text style={styles.position}>{item.institution}</Text>
-      <View style={{ flexDirection: "row", justifyContent: "space-between", width: "100%" }}>
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          width: "100%",
+          paddingTop: 1,
+        }}
+      >
         <Text style={styles.company}>{`${item.studyType ? `${item.studyType}, ` : ""}${
           item.area
         }`}</Text>
