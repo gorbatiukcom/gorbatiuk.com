@@ -30,7 +30,7 @@ export const Summary = () => (
 
         In addition to my professional activities, this year I have been involved in personal projects in the food-tech field.
 
-        Before that I worked in a travel-tech startup for 4 years where I grew from Junior Frontend Developer to Lead Fullstack Developer. 
+        Before that I worked in a travel-tech startup for 4 years where I grew from Junior Frontend Developer to Fullstack Developer. 
         My responsibilities included developing and launching a React Native 
         mobile app, leading web application development, and assisting with backend development on Node.js.
         My experience also includes direct collaboration with CEO and stakeholders to align development with business goals, leveraging user feedback and 
