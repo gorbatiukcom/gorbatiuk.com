@@ -87,12 +87,19 @@ const EducationItem = ({
 );
 
 export const Education = () => (
-  <Card>
-    <Title>{Resume.sections.education.name}</Title>
-    <View style={styles.items}>
-      {Resume.sections.education.items.map((item) => {
-        return <EducationItem key={item.id} item={item} />;
-      })}
-    </View>
-  </Card>
+  <>
+    <Card>
+      <Title>{Resume.sections.education.name}</Title>
+      <View style={styles.items}>
+        {Resume.sections.education.items.map((item, index) => {
+          return (
+            <React.Fragment key={item.id}>
+              <EducationItem item={item} />
+              {index === 0 ? <View style={{ width: "100%", height: 10 }}></View> : null}
+            </React.Fragment>
+          );
+        })}
+      </View>
+    </Card>
+  </>
 );

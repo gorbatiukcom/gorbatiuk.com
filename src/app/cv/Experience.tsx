@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   },
   item: {
     flexDirection: "row",
-    gap: 8,
+    gap: 12,
     width: "100%",
   },
   position: {
@@ -108,7 +108,9 @@ const styles = StyleSheet.create({
 const Achievement = ({ achievement }: { achievement: string }) => {
   return (
     <View style={styles.achievementItem}>
-      <View style={styles.achievementDot}></View>
+      <View style={{ height: "100%", width: 4 }}>
+        <View style={styles.achievementDot}></View>
+      </View>
       <Text style={styles.achievementText}>{achievement}</Text>
     </View>
   );
@@ -136,6 +138,10 @@ const ExperienceItem = ({
       label: string;
       href: string;
     };
+    urlWebApp2?: {
+      label: string;
+      href: string;
+    };
     urlMobileApp?: {
       label: string;
       href: string;
@@ -144,7 +150,9 @@ const ExperienceItem = ({
   index: number;
 }) => (
   <View style={[styles.item, { paddingTop: index === 0 ? 0 : 16 }]}>
-    <Image src={item.logo} style={styles.logo} />
+    <View style={{ height: "100%", width: "36px" }}>
+      <Image src={item.logo} style={styles.logo} />
+    </View>
 
     <View style={{ width: "100%" }}>
       <Text style={styles.position}>{item.position}</Text>
@@ -166,12 +174,18 @@ const ExperienceItem = ({
           <Achievement key={achievement} achievement={achievement} />
         ))}
       </View>
-      {item.urlWebApp || item.urlMobileApp ? (
+      {item.urlWebApp || item.urlWebApp2 || item.urlMobileApp ? (
         <View style={styles.links}>
           {item.urlWebApp ? (
             <Link href={item.urlWebApp.href} style={styles.link}>
               <Earth style={styles.linkIcon} />
               <Text>{item.urlWebApp.label}</Text>
+            </Link>
+          ) : null}
+          {item.urlWebApp2 ? (
+            <Link href={item.urlWebApp2.href} style={styles.link}>
+              <Earth style={styles.linkIcon} />
+              <Text>{item.urlWebApp2.label}</Text>
             </Link>
           ) : null}
           {item.urlMobileApp ? (

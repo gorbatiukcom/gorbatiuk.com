@@ -102,6 +102,30 @@
       "id": "experience",
       "items": [
         {
+          "id": "ddk9wn1m29aw14gwnm247p5y",
+          "visible": true,
+          "company": "DEX223",
+          "logo": "https://gorbatiuk.com/images/cv/logo_dex223.jpeg",
+          "position": "Full Stack Developer",
+          "location": "Remote",
+          "date": "Sep 2023 - Nov 2024 · 1 yr 3 mos",
+          "summary": "Developing decentralized crypto exchange for ERC-223 & ERC-20 tokens.",
+          "achievements": [],
+          "tags": ["React", "Next.js", "Web3", "wagmi", "viem", "ethers"],
+          "url": {
+            "label": "",
+            "href": "https://www.linkedin.com/company/102123513/"
+          },
+          "urlWebApp": {
+            "label": "Landing Page",
+            "href": "https://www.dex223.io/"
+          },
+          "urlWebApp2": {
+            "label": "Web App",
+            "href": "https://test-app.dex223.io/"
+          }
+        },
+        {
           "id": "ddk9wn1m29aw14gwnm247p5z",
           "visible": true,
           "company": "Callisto Enterprise (web3)",
@@ -250,7 +274,7 @@
           "name": "Restify",
           "logo": "https://gorbatiuk.com/images/cv/logo_restify.png",
           "description": "Personal pet project.",
-          "date": "Feb 2023 - Present",
+          "date": "Feb 2023 - Sep 2023",
           "summary": "SaaS POS system for restaurants\nA team of 3 people, my role is Full Stuck Developer\nKey features:",
           "achievements": [
             "Desktop and Mobile point of sale apps",
@@ -398,7 +422,15 @@
         {
           "id": "t399x03340lbvdiw85gcupvb1",
           "visible": true,
-          "name": "Tailwind",
+          "name": "Tailwind CSS",
+          "description": "",
+          "level": 0,
+          "keywords": []
+        },
+        {
+          "id": "t399x03340lbvdiw85gcupv77",
+          "visible": true,
+          "name": "styled components",
           "description": "",
           "level": 0,
           "keywords": []
@@ -510,7 +542,7 @@
         {
           "id": "mm81o8g5dk48zrz0syeo4444",
           "visible": true,
-          "name": "styled components",
+          "name": "Tailwind CSS",
           "description": "",
           "level": 0,
           "keywords": []

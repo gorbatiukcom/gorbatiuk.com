@@ -1,7 +1,6 @@
 "use client";
 /* eslint-disable jsx-a11y/alt-text */
 
-import { Button, Flex } from "@chakra-ui/react";
 import {
   Document,
   Font,
@@ -10,8 +9,8 @@ import {
   PDFViewer,
   StyleSheet,
   View,
-} from "@react-pdf/renderer/lib/react-pdf.browser.es.js";
-import React from "react";
+} from "@react-pdf/renderer";
+import React, { useEffect, useState } from "react";
 
 import { Education } from "./Education";
 import { Experience } from "./Experience";
@@ -26,11 +25,14 @@ import { Summary } from "./Summary";
 const styles = StyleSheet.create({
   page: {
     padding: 16,
+    paddingBottom: 0,
+    paddingTop: 0,
     backgroundColor: "#f2f4f5",
   },
   container: {
     flex: 1,
     flexDirection: "row",
+    paddingTop: 16,
   },
   image: {
     marginBottom: 10,
@@ -68,22 +70,39 @@ Font.register({
   src: `https://gorbatiuk.com/fonts/InstrumentSans-Bold.ttf`,
 });
 
-const Resume = ({ style, ...rest }: any) => (
-  <Page style={Array.isArray(style) ? [...style, styles.page] : [style, styles.page]} {...rest}>
-    <View style={styles.container}>
-      <View style={styles.leftColumn}>
-        <Info />
-        <Skills />
+// const DEFAULT_WIDTH = 100;
+const Resume = ({ style, size, ...rest }: any) => {
+  // const [testWidth, setTestWidth] = useState(DEFAULT_WIDTH);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     setTestWidth(window.innerWidth || DEFAULT_WIDTH);
+  //     console.log("🚀 ~ useEffect ~ window.innerWidth:", window.innerWidth);
+  //   }
+  // }, []);
+  return (
+    <Page
+      style={Array.isArray(style) ? [...style, styles.page] : [style, styles.page]}
+      size={size}
+      // size={{
+      //   width: testWidth * 1.5,
+      // }}
+      {...rest}
+    >
+      <View style={styles.container}>
+        <View style={styles.leftColumn}>
+          <Info />
+          <Skills />
+        </View>
+        <View style={styles.rightColumn}>
+          <Summary />
+          <Experience />
+          <Projects />
+          <Education />
+        </View>
       </View>
-      <View style={styles.rightColumn}>
-        <Summary />
-        <Experience />
-        <Projects />
-        <Education />
-      </View>
-    </View>
-  </Page>
-);
+    </Page>
+  );
+};
 
 // Create Document Component
 const PDFDoc = () => (
@@ -100,20 +119,30 @@ const PDFDoc = () => (
 export default function Home() {
   return (
     <>
-      <PDFViewer showToolbar={false} style={{ width: "100vw", height: "100dvh", border: "none" }}>
+      <PDFViewer
+        showToolbar={false}
+        style={{
+          // width: "100vw",
+          width: "100%",
+          height: "100svh",
+          border: "none",
+          // position: "absolute",
+          // top: 0,
+          // left: 0,
+
+          // width: 100%,
+          // height: 100%,
+        }}
+      >
         <PDFDoc />
       </PDFViewer>
-      <Flex position="fixed" zIndex={100} right="20px" bottom="20px">
+      {/* <div>
         <PDFDownloadLink document={<PDFDoc />} fileName="cv_oleg_gorbatiuk.pdf">
-          {({ loading }: any) => {
-            return (
-              <Button bg="black" color="white" _hover={{ bg: "black" }}>
-                {loading ? "Loading document..." : "Download CV"}
-              </Button>
-            );
-          }}
+          {({ blob, url, loading, error }: any) =>
+            loading ? "Loading document..." : "Download now!"
+          }{" "}
         </PDFDownloadLink>
-      </Flex>
+      </div> */}
     </>
   );
 }

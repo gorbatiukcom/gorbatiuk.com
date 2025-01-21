@@ -73,10 +73,10 @@ export const Info = () => (
       <Email style={styles.icon} />
       <Text style={styles.subtitle}>{Resume.basics.email}</Text>
     </Link>
-    <Link href={Resume.basics.phone.href} style={styles.link}>
+    {/* <Link href={Resume.basics.phone.href} style={styles.link}>
       <Phone style={styles.icon} />
       <Text style={styles.subtitle}>{Resume.basics.phone.label}</Text>
-    </Link>
+    </Link> */}
     <Link href={Resume.basics.linkedin.href} target="_blank" style={styles.link}>
       <LinkedIn style={styles.icon} />
       <Text style={styles.subtitle}>{Resume.basics.linkedin.label}</Text>

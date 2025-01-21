@@ -1,11 +1,11 @@
 // app/fonts.ts
-import { Oswald } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const oswald = Oswald({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-oswald",
+  variable: "--font-inter",
 });
 
 export const fonts = {
-  oswald,
+  inter,
 };

@@ -1,12 +1,8 @@
-import { ColorModeScript, Flex } from "@chakra-ui/react";
 import type { Metadata } from "next";
 import { Viewport } from "next";
 
-import { Header } from "@/components/header/header";
-
 import { fonts } from "./fonts";
 import { Providers } from "./providers";
-import { theme } from "./theme";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -21,12 +17,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={fonts.oswald.className}>
-      <body>
-        <Providers>
-          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-          <Header>{children}</Header>
-        </Providers>
+    <html lang="en" className={fonts.inter.className}>
+      <body
+        style={{
+          margin: 0,
+          overflow: "hidden",
+          height: "100svh",
+        }}
+      >
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

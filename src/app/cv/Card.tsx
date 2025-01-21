@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
 });
 
 export const Card = ({ style, children, ...rest }: any) => (
-  <View style={Array.isArray(style) ? [...style, styles.card] : [style, styles.card]} {...rest}>
+  <View style={Array.isArray(style) ? [styles.card, ...style] : [styles.card, style]} {...rest}>
     {children}
   </View>
 );
