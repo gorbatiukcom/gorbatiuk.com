@@ -1,6 +1,5 @@
 "use client";
 /* eslint-disable jsx-a11y/alt-text */
-
 import {
   Document,
   Font,
@@ -10,6 +9,7 @@ import {
   StyleSheet,
   View,
 } from "@react-pdf/renderer";
+import dynamic from "next/dynamic";
 import React, { useEffect, useState } from "react";
 
 import { Education } from "./Education";
@@ -117,25 +117,31 @@ const PDFDoc = () => (
 );
 
 export default function Home() {
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    setIsClient(true);
+  });
   return (
     <>
-      <PDFViewer
-        showToolbar={false}
-        style={{
-          // width: "100vw",
-          width: "100%",
-          height: "100svh",
-          border: "none",
-          // position: "absolute",
-          // top: 0,
-          // left: 0,
+      {isClient ? (
+        <PDFViewer
+          showToolbar={false}
+          style={{
+            // width: "100vw",
+            width: "100%",
+            height: "100svh",
+            border: "none",
+            // position: "absolute",
+            // top: 0,
+            // left: 0,
 
-          // width: 100%,
-          // height: 100%,
-        }}
-      >
-        <PDFDoc />
-      </PDFViewer>
+            // width: 100%,
+            // height: 100%,
+          }}
+        >
+          <PDFDoc />
+        </PDFViewer>
+      ) : null}
       {/* <div>
         <PDFDownloadLink document={<PDFDoc />} fileName="cv_oleg_gorbatiuk.pdf">
           {({ blob, url, loading, error }: any) =>
