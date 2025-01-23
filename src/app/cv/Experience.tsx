@@ -5,7 +5,7 @@ import { Image, Link as PDFLink, StyleSheet, Text, View } from "@react-pdf/rende
 import React from "react";
 
 import Card from "./Card";
-import { AppStore, Earth } from "./icons/icons";
+import { AppStore, LinkIcon } from "./icons/icons";
 import Resume from "./reactive_resume.json";
 import Title from "./Title";
 
@@ -151,7 +151,9 @@ const ExperienceItem = ({
 }) => (
   <View style={[styles.item, { paddingTop: index === 0 ? 0 : 16 }]}>
     <View style={{ height: "100%", width: "36px" }}>
-      <Image src={item.logo} style={styles.logo} />
+      <Link href={item.url.href}>
+        <Image src={item.logo} style={styles.logo} />
+      </Link>
     </View>
 
     <View style={{ width: "100%" }}>
@@ -164,7 +166,14 @@ const ExperienceItem = ({
           paddingTop: 1,
         }}
       >
-        <Text style={styles.company}>{item.company}</Text>
+        <Link
+          href={item.url.href}
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <Text style={styles.company}>{item.company}</Text>
+        </Link>
         <Text style={styles.company}>{item.date}</Text>
       </View>
       <Text style={styles.company}>{item.location}</Text>
@@ -178,13 +187,13 @@ const ExperienceItem = ({
         <View style={styles.links}>
           {item.urlWebApp ? (
             <Link href={item.urlWebApp.href} style={styles.link}>
-              <Earth style={styles.linkIcon} />
+              <LinkIcon style={styles.linkIcon} />
               <Text>{item.urlWebApp.label}</Text>
             </Link>
           ) : null}
           {item.urlWebApp2 ? (
             <Link href={item.urlWebApp2.href} style={styles.link}>
-              <Earth style={styles.linkIcon} />
+              <LinkIcon style={styles.linkIcon} />
               <Text>{item.urlWebApp2.label}</Text>
             </Link>
           ) : null}
@@ -213,7 +222,14 @@ export const Experience = () => (
     <Title>{Resume.sections.experience.name}</Title>
     <View style={styles.items}>
       {Resume.sections.experience.items.map((item, index) => {
-        return <ExperienceItem key={item.id} item={item} index={index} />;
+        return (
+          <React.Fragment key={item.id}>
+            {index === Resume.sections.experience.items.length - 1 ? (
+              <View style={{ width: "100%", height: 40 }}></View>
+            ) : null}
+            <ExperienceItem key={item.id} item={item} index={index} />
+          </React.Fragment>
+        );
       })}
     </View>
   </Card>

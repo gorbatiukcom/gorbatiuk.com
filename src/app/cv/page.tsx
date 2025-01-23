@@ -9,7 +9,6 @@ import {
   StyleSheet,
   View,
 } from "@react-pdf/renderer";
-import dynamic from "next/dynamic";
 import React, { useEffect, useState } from "react";
 
 import { Education } from "./Education";
@@ -124,31 +123,50 @@ export default function Home() {
   return (
     <>
       {isClient ? (
-        <PDFViewer
-          showToolbar={false}
-          style={{
-            // width: "100vw",
-            width: "100%",
-            height: "100svh",
-            border: "none",
-            // position: "absolute",
-            // top: 0,
-            // left: 0,
+        <>
+          <PDFViewer
+            showToolbar={false}
+            style={{
+              width: "100%",
+              height: "100svh",
+              border: "none",
+            }}
+          >
+            <PDFDoc />
+          </PDFViewer>
 
-            // width: 100%,
-            // height: 100%,
-          }}
-        >
-          <PDFDoc />
-        </PDFViewer>
+          <div
+            style={{
+              position: "fixed",
+              bottom: 16,
+              right: 20,
+            }}
+          >
+            <PDFDownloadLink
+              document={<PDFDoc />}
+              fileName="cv_oleg_gorbatiuk.pdf"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              {/* @ts-expect-error react-pdf */}
+              {({ loading }: any) => (
+                <div
+                  style={{
+                    background: "#000",
+                    color: "#FFF",
+                    borderRadius: 8,
+                    padding: "12px 16px",
+                    fontWeight: 500,
+                  }}
+                >
+                  {loading ? "Loading CV..." : "Download CV"}
+                </div>
+              )}
+            </PDFDownloadLink>
+          </div>
+        </>
       ) : null}
-      {/* <div>
-        <PDFDownloadLink document={<PDFDoc />} fileName="cv_oleg_gorbatiuk.pdf">
-          {({ blob, url, loading, error }: any) =>
-            loading ? "Loading document..." : "Download now!"
-          }{" "}
-        </PDFDownloadLink>
-      </div> */}
     </>
   );
 }

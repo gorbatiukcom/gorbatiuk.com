@@ -24,16 +24,9 @@ export const Summary = () => (
   <Card style={styles.container}>
     <Text style={styles.title}>Product Developer | React, React Native</Text>
     <Text style={styles.summary}>
-      {`Full Stack Developer with a front-end focus and over 6 years of commercial experience.
-
-        My most recent role in a web3 company involved creating a mobile crypto wallet and contributing to various React.js applications.
-
-        In addition to my professional activities, this year I have been involved in personal projects in the food-tech field.
-
-        Before that I worked in a travel-tech startup for 4 years where I grew from Junior Frontend Developer to Fullstack Developer. 
-        My responsibilities included developing and launching a mobile app (React Native), leading web application development (React, Vue), and assisting with backend development (Node.js).
-        My experience also includes direct collaboration with CEO and stakeholders to align development with business goals, leveraging user feedback and 
-        analytics for product enhancement.`}
+      {`Full Stack Developer with 6+ years of experience in web and mobile development, specializing in React, React Native, and blockchain technologies. 
+      
+Skilled in building modern applications that seamlessly integrate user needs with business goals, ensuring impactful solutions through a strong focus on UX and close collaboration with stakeholders.`}
     </Text>
   </Card>
 );

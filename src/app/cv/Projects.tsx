@@ -5,7 +5,7 @@ import { Image, Link as PDFLink, StyleSheet, Text, View } from "@react-pdf/rende
 import React from "react";
 
 import Card from "./Card";
-import { AppStore, Earth } from "./icons/icons";
+import { AppStore, LinkIcon } from "./icons/icons";
 import Resume from "./reactive_resume.json";
 import Title from "./Title";
 
@@ -165,7 +165,7 @@ const ProjectItem = ({
         <View style={styles.links}>
           {item.urlWebApp ? (
             <Link href={item.urlWebApp.href} style={styles.link}>
-              <Earth style={styles.linkIcon} />
+              <LinkIcon style={styles.linkIcon} />
               <Text>{item.urlWebApp.label}</Text>
             </Link>
           ) : null}

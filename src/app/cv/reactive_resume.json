@@ -31,7 +31,9 @@
         "border": false,
         "grayscale": false
       }
-    }
+    },
+    "githubUrl": "https://github.com/gorbatiukcom/gorbatiuk.com",
+    "webUrl": "https://gorbatiuk.com/cv"
   },
   "sections": {
     "summary": {
@@ -71,7 +73,7 @@
           "area": "Computer Science",
           "score": "",
           "date": "2017 — 2021",
-          "summary": "The diploma is unfinished.",
+          "summary": "Unfinished, 3 years completed",
           "url": {
             "label": "",
             "href": ""
@@ -104,13 +106,13 @@
         {
           "id": "ddk9wn1m29aw14gwnm247p5y",
           "visible": true,
-          "company": "DEX223",
+          "company": "DEX223 (web3)",
           "logo": "https://gorbatiuk.com/images/cv/logo_dex223.jpeg",
           "position": "Full Stack Developer",
           "location": "Remote",
           "date": "Sep 2023 - Nov 2024 · 1 yr 3 mos",
-          "summary": "Developing decentralized crypto exchange for ERC-223 & ERC-20 tokens.",
-          "achievements": [],
+          "summary": "",
+          "achievements": ["Developing decentralized crypto exchange for ERC-223 & ERC-20 tokens."],
           "tags": ["React", "Next.js", "Web3", "wagmi", "viem", "ethers"],
           "url": {
             "label": "",
@@ -133,8 +135,8 @@
           "position": "React Native Developer",
           "location": "Remote",
           "date": "Sep 2022 - Nov 2023 · 1 yr 3 mos",
-          "summary": "Developed a mobile application from scratch.\n\nThe project is a non-custodial mobile crypto wallet supporting over 80 blockchains.",
-          "achievements": [],
+          "summary": "",
+          "achievements": ["Developed a non-custodial mobile crypto wallet supporting 80+ blockchains."],
           "tags": ["React Native", "Expo", "React", "Web3"],
           "url": {
             "label": "",
@@ -153,15 +155,14 @@
           "achievements": [
             "Launched a mobile app, dealing with all aspects: design, frontend, backend, analytics, custom CRM system, and publication to the App Store.",
             "Worked closely with the CEO and other stakeholders during product decision-making.",
-            "I completely rewrote web application from old technologies to TypeScript, React.js, Next.js, and styled-components.",
+            "Migrated legacy web applications to TypeScript, React.js, and Next.js.",
             "Created an internal Design System and helped implement it in Figma for our designers to use.",
             "Helped with backend development using Node.js + mongoDB + TypeScript + GraphQL",
             "Maintained an internal CRM system written in Vue.js + Nuxt.js + Feathers.js + Bootstrap (And started rewriting it to React, Next.js, and TypeScript, using an internal design system written earlier for the main product)",
             "Participated in Google's Growth Lab program",
             "Participated in Madeira Startup Retreat Accelerator"
-            
           ],
-          "tags": ["TS", "React", "Next.js", "React Native", "Vue.js", "Node.js"],
+          "tags": ["React", "Next.js", "React Native", "Vue.js", "Node.js"],
           "url": {
             "label": "",
             "href": "https://www.linkedin.com/company/19038534"
@@ -183,8 +184,8 @@
           "position": "Intern DevOps Engineer",
           "location": "Lodz, Poland",
           "date": "Aug 2018 - May 2019 · 10 mos",
-          "summary": "Created CI/CD pipelines for a project consisting of over 70 repositories using Jenkins",
-          "achievements": [],
+          "summary": "",
+          "achievements": ["Built CI/CD pipelines for over 70 repositories using Jenkins."],
           "tags": ["Jenkins", "CI/CD"],
           "url": {
             "label": "",
@@ -263,7 +264,7 @@
       ]
     },
     "projects": {
-      "name": "Pet-projects",
+      "name": "Pet Projects",
       "columns": 1,
       "visible": true,
       "id": "projects",

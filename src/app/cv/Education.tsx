@@ -95,7 +95,7 @@ export const Education = () => (
           return (
             <React.Fragment key={item.id}>
               <EducationItem item={item} />
-              {index === 0 ? <View style={{ width: "100%", height: 10 }}></View> : null}
+              {/* {index === 0 ? <View style={{ width: "100%", height: 10 }}></View> : null} */}
             </React.Fragment>
           );
         })}

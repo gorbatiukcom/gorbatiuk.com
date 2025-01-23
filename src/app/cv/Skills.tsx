@@ -1,17 +1,19 @@
 /* eslint-disable react/no-array-index-key */
 
-import { StyleSheet, Text, View } from "@react-pdf/renderer";
+import { Link as PDFLink, StyleSheet, Text, View } from "@react-pdf/renderer";
 import React from "react";
 
 import Card from "./Card";
+import { ChromeIcon, GitHubLogo } from "./icons/icons";
 import Resume from "./reactive_resume.json";
 import Title from "./Title";
+
+const Link: any = PDFLink;
 
 const styles = StyleSheet.create({
   subtitle: {
     fontSize: 10,
     fontFamily: "Instrument Sans 700",
-    // 505a63 75808a
     color: "#505a63",
     marginTop: 8,
     marginBottom: 4,
@@ -41,7 +43,6 @@ const styles = StyleSheet.create({
   language: {
     fontSize: 10,
     fontFamily: "Instrument Sans 700",
-    // 505a63 75808a 3b434b
     color: "#3b434b",
     marginTop: 4,
     marginBottom: 4,
@@ -49,8 +50,25 @@ const styles = StyleSheet.create({
   languageLevel: {
     fontSize: 10,
     fontFamily: "Instrument Sans 700",
-    // 505a63 75808a 848c94
     color: "#848c94",
+  },
+
+  link: {
+    textDecoration: "none",
+    fontFamily: "Instrument Sans 600",
+    fontSize: 10,
+    color: "#434649",
+    backgroundColor: "#FFF",
+    borderRadius: 8,
+    paddingHorizontal: 8,
+    paddingVertical: 8,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+  },
+  linkIcon: {
+    width: 14,
+    height: 14,
   },
 });
 
@@ -93,8 +111,6 @@ const Skills = () => (
       <SkillEntry name="Combat Abilities" skills={Resume.sections.skillsMobile} />
       <Text style={styles.subtitle}>Back-end</Text>
       <SkillEntry name="Combat Abilities" skills={Resume.sections.skillsBack} />
-      {/* <Text style={styles.subtitle}>Front-end</Text>
-      <SkillEntry name="Combat Abilities" skills={Resume.sections.skills} /> */}
     </Card>
     <Card>
       <Title>Skills</Title>
@@ -119,6 +135,17 @@ const Skills = () => (
         <Text style={styles.languageLevel}>{` — Native Speaker`}</Text>
       </View>
     </Card>
+    <View style={{ width: "100%", height: 16 }}></View>
+    <View style={{ gap: 4 }}>
+      <Link href={Resume.basics.webUrl} style={styles.link}>
+        <ChromeIcon style={styles.linkIcon} />
+        <Text>Latest Version Online</Text>
+      </Link>
+      <Link href={Resume.basics.githubUrl} style={styles.link}>
+        <GitHubLogo style={styles.linkIcon} />
+        <Text>View Source Code on GitHub</Text>
+      </Link>
+    </View>
   </>
 );
 
